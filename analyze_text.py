@@ -8,4 +8,4 @@ def analyze_text(text):
     percent = count_e / alphas_num * 100
     percent_rounded = "%.2f" % percent
     result = "The text contains {0} alphabetic characters, of which {1} ({2}%) are 'e'."
-    print(result.format(alphas_num, count_e, percent_rounded))
+    return(result.format(alphas_num, count_e, percent_rounded))
