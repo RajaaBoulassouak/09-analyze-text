@@ -5,5 +5,8 @@ def analyze_text(text):
             alphas_num = alphas_num + 1
 
     count_e = text.count('e') + text.count('E')
-    percent = count_e / alphas_num * 100
+    percent = (count_e / alphas_num * 100.00)
     print(f'The text contains {alphas_num} alphabetic characters, of which {count_e} ({percent}%) are "e".')
+
+    #from analyze_text import analyze_text
+    #analyze_text('Eeeee')
