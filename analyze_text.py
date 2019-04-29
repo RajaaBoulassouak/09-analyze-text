@@ -6,5 +6,6 @@ def analyze_text(text):
 
     count_e = text.count('e') + text.count('E')
     percent = (count_e / alphas_num * 100.00)
-    percent = round(percent, 2)
-    print(f"The text contains {alphas_num} alphabetic characters, of which {count_e} ({percent}%) are 'e'.")
+    percent = "%.2f" % percent
+    result = "The text contains {0} alphabetic characters, of which {1} ({2}%) are 'e'."
+    print(result.format(alphas_num, count_e, percent))
